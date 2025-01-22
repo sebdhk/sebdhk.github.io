@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    .left {
+    width: 25%;
+    }
+
+    .right {
+    width: 75%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+</head>
+<body>
+
+    <h2>Two Unequal Columns</h2>
+
+    <div class="row">
+    <div class="column left" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column right" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <form id="top6-form">
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_1" name="select_1" required>
+            </div>
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_2" name="select_2" required>
+            </div>
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_3" name="select_3" required>
+            </div>
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_4" name="select_4" required>
+            </div>
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_5" name="select_5" required>
+            </div>
+            <div class="ranking-name" draggable="true">
+                <input list="options" id="select_6" name="select_6" required>
+            </div>
+        </form>
+
+        <datalist id="options">
+            <!-- Options will be populated by JavaScript -->
+        </datalist>
+    </div>
+    </div>
+    <script src="../js/nhl.js"></script>
+</body>
+</html>
