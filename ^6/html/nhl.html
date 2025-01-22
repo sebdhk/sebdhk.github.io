@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/ranking_styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+  <title>NHL Ranking</title>
+</head>
+<body>
+  <header>
+    <h1>Rank</h1>
+  </header>
+  <main>
+    <form id="top6-form">
+      <h2>Your Ranking</h2>
+      <div class="ranking-container">
+        <!-- Ranking #1 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_1" name="select_1" required>
+        </div>
+        <!-- Ranking #2 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_2" name="select_2" required>
+        </div>
+        <!-- Ranking #3 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_3" name="select_3" required>
+        </div>
+        <!-- Ranking #4 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_4" name="select_4" required>
+        </div>
+        <!-- Ranking #5 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_5" name="select_5" required>
+        </div>
+        <!-- Ranking #6 -->
+        <div class="ranking-name" draggable="true">
+          <input list="options" id="select_6" name="select_6" required>
+        </div>
+      </div>
+
+      <!-- Datalist -->
+      <datalist id="options">
+        <!-- Options will be populated by JavaScript -->
+      </datalist>
+
+      <button href="../html/profile.html" id="submit">Submit</button>
+    </form>
+  </main>
+  <script src="../js/nhl.js"></script>
+</body>
+</html>

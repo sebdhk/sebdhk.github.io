@@ -1,0 +1,32 @@
+h1 {
+    justify-content: center;
+    text-align: center;
+  }
+  
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.posts {
+    margin-top: 20px;
+}
+  
+.post {
+    justify-content: center;
+    align-items: center;
+}
+  
+.ranking-post {
+    margin-top: 20px;
+}
+  
+.ranking-post ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.ranking-post li {
+    padding: 5px 0;
+}

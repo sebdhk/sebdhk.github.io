@@ -1,0 +1,12 @@
+.header li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.category_selector h2 {
+    font-weight: bold;
+}
+
+ul {
+    text-decoration: none;
+}
